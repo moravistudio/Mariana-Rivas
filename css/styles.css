@@ -225,6 +225,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .tira { max-width: var(--max); margin: 100px auto 0; padding: 0 var(--pad); display: flex; flex-wrap: wrap; gap: 8px; }
 .tira .ph { flex: 1 1 240px; height: 400px; }
+/* En pantallas angostas cada foto va debajo de su paso (así se entiende a qué texto acompaña); la tira de 3 fotos solo queda en escritorio */
+.paso__foto { display: none; }
+@media (max-width: 959px) {
+  .paso { flex-basis: 100%; }
+  .paso__foto { display: block; margin-top: 18px; }
+  .paso__foto .ph { height: 340px; }
+  .tira { display: none; }
+}
 
 /* ---------- Paquetes ---------- */
 .paquetes { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch; }
