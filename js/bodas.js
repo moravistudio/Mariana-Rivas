@@ -64,7 +64,7 @@
       anio: '2026',
       resumen: 'Una boda frente al mar, con los pies descalzos, risas largas y el último sol del día.',
       historia: 'Una boda frente al mar, con los pies descalzos, risas largas y el último sol del día. Camila y Mateo se dieron el sí en la playa, rodeados de su familia, y el atardecer hizo el resto.',
-      testimonio: 'Cuando vimos las fotos volvimos a llorar de la emoción. Estaba todo ahí: el sol, las risas y a nuestras familias.',
+      testimonio: 'Cuando vimos las fotos volvimos a llorar de la emoción. Estaba todo ahí: el sol, las risas y nuestras familias.',
       portada: { archivo: 'portada.jpg', alt: 'Camila y Mateo abrazados en la playa al atardecer, en un plano medio amplio' },
       fotos: fotos([
         'Camila y Mateo en silueta frente al atardecer en la playa, a punto de besarse',
