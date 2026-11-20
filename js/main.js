@@ -132,8 +132,11 @@
             '<div class="pie__col"><span class="pie__titulo">Redes</span>' + redes + '</div>' +
           '</div>' +
         '</div>' +
-        '<div class="pie__legal"><span>© ' + escapar(CONFIG.anio) + ' ' + escapar(CONFIG.nombreCorto) + '. Todos los derechos reservados.</span><span>' + escapar(CONFIG.legal) + '</span></div>' +
-        (CONFIG.firma ? '<p class="firma-moravi">Desarrollado por <a class="flink" href="https://www.moravistudio.com/" target="_blank" rel="noopener">moravistudio.com</a></p>' : '') +
+        '<div class="pie__legal">' +
+          '<span class="pie__legal-izq">© ' + escapar(CONFIG.anio) + ' ' + escapar(CONFIG.nombreCorto) + '. Todos los derechos reservados.</span>' +
+          '<span class="firma-moravi">' + (CONFIG.firma ? 'Desarrollado por <a class="flink" href="https://www.moravistudio.com/" target="_blank" rel="noopener">moravistudio.com</a>' : '') + '</span>' +
+          '<span class="pie__legal-der">' + escapar(CONFIG.legal) + '</span>' +
+        '</div>' +
       '</footer>';
   }
 
