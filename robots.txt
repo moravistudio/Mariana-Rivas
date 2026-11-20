@@ -1,0 +1,5 @@
+# Dirección de GitHub Pages; cámbiala si usas otro dominio
+User-agent: *
+Allow: /
+
+Sitemap: https://moravistudio.github.io/Mariana-Rivas/sitemap.xml

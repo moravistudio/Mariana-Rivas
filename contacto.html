@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · Mariana Rivas Fotografía de bodas</title>
+<meta name="description" content="Cuéntame la fecha, el lugar y cómo imaginas tu boda. Te respondo con disponibilidad y una propuesta a tu medida.">
+<meta name="theme-color" content="#75705D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Contacto · Mariana Rivas Fotografía de bodas">
+<meta property="og:description" content="Cuéntame la fecha, el lugar y cómo imaginas tu boda. Te respondo con disponibilidad y una propuesta a tu medida.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<!-- La barra de aviso, la cabecera y el pie se arman desde CONFIG en js/main.js -->
+<div id="cabecera"><noscript><nav class="cabecera" aria-label="Principal"><a href="index.html">Inicio</a> · <a href="sobre-mi.html">Sobre mí</a> · <a href="paquetes.html">Paquetes</a> · <a href="galeria.html">Galería</a> · <a href="contacto.html">Contacto</a></nav></noscript></div>
+
+<main id="contenido">
+
+  <section class="encabezado-pagina" aria-labelledby="titulo-pagina">
+    <span class="rotulo">Contacto</span>
+    <h1 class="titulo-cursiva" id="titulo-pagina">Hablemos de tu boda</h1>
+    <p class="lead">Cuéntame lo básico y te respondo en <span data-cfg="tiempoRespuesta">[TIEMPO DE RESPUESTA]</span> con disponibilidad y una propuesta.</p>
+  </section>
+
+  <section class="contacto" aria-label="Formulario y datos de contacto">
+    <div class="contacto__interior">
+      <div class="contacto__datos">
+        <div class="dato"><span class="rotulo rotulo--fuerte">Escríbeme</span><span><span data-cfg="correo">[Correo electrónico]</span><br><span data-cfg="whatsapp">[WhatsApp]</span></span></div>
+        <div class="dato"><span class="rotulo rotulo--fuerte">Dónde estoy</span><span><span data-cfg="ubicacionContacto">[Ciudad, país]</span><br>Viajo a donde me lleve tu boda.</span></div>
+        <div class="dato"><span class="rotulo rotulo--fuerte">Horario de respuesta</span><span data-cfg="horarioRespuesta">[Días y horas en que respondes mensajes]</span></div>
+        <div class="dato"><span class="rotulo rotulo--fuerte">Redes</span><span data-redes>[Instagram] · [Facebook] · [Pinterest]</span></div>
+      </div>
+
+      <form class="formulario" id="formulario" novalidate aria-labelledby="titulo-form">
+        <h2 class="titulo-caps" id="titulo-form">Cuéntame tu boda</h2>
+        <div class="fila">
+          <div class="campo"><label for="f-nombres">Nombres de la pareja</label><input id="f-nombres" name="nombres" type="text" autocomplete="off" required aria-describedby="error-nombres"><span class="campo__error" id="error-nombres"></span></div>
+          <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required aria-describedby="error-correo"><span class="campo__error" id="error-correo"></span></div>
+        </div>
+        <div class="fila">
+          <div class="campo"><label for="f-whatsapp">WhatsApp</label><input id="f-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+51 987 654 321" aria-describedby="error-whatsapp"><span class="campo__error" id="error-whatsapp"></span></div>
+          <div class="campo"><label for="f-fecha">Fecha de la boda</label><input id="f-fecha" name="fecha" type="text" placeholder="Día / mes / año" autocomplete="off" required aria-describedby="error-fecha"><span class="campo__error" id="error-fecha"></span></div>
+        </div>
+        <div class="fila">
+          <div class="campo"><label for="f-lugar">Lugar de la ceremonia y la fiesta</label><input id="f-lugar" name="lugar" type="text" autocomplete="off" required aria-describedby="error-lugar"><span class="campo__error" id="error-lugar"></span></div>
+          <div class="campo"><label for="f-invitados">Número aproximado de invitados</label><input id="f-invitados" name="invitados" type="text" inputmode="numeric" autocomplete="off" aria-describedby="error-invitados"><span class="campo__error" id="error-invitados"></span></div>
+        </div>
+        <div class="campo campo--completo"><label for="f-paquete">Paquete que te interesa</label>
+          <select id="f-paquete" name="paquete"><option value="no-se">Aún no lo sé</option><option value="esencial">Esencial</option><option value="clasico">Clásico</option><option value="integral">Integral</option></select></div>
+        <div class="campo campo--completo"><label for="f-mensaje">Cuéntame cómo imaginas tu día</label>
+          <textarea id="f-mensaje" name="mensaje" rows="5"></textarea></div>
+        <div class="campo campo--completo"><label for="f-como">¿Cómo me conociste?</label>
+          <select id="f-como" name="como"><option value="instagram">Instagram</option><option value="recomendacion">Recomendación</option><option value="google">Búsqueda en Google</option><option value="otro">Otro</option></select></div>
+        <button type="submit" class="btn btn--oliva formulario__envio">Enviar mensaje</button>
+        <p class="formulario__estado" id="formulario-estado" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="foto-ancha" aria-label="Foto">
+    <div class="ph ph--2" data-label="[ FOTO · PAREJA RIENDO, PLANO AMPLIO · 3:1 ]"><img src="img/contacto-pareja.jpg" alt="Una pareja riendo juntos en un campo abierto de pasto dorado" width="1800" height="600" loading="lazy"></div>
+  </section>
+</main>
+
+<div id="pie"></div>
+<script src="js/main.js"></script>
+<script src="js/petalos.js?v=4"></script>
+</body>
+</html>
